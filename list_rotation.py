@@ -1,0 +1,7 @@
+n = list(map(int,input().split()))
+s = int(input())
+k = s%len(n)
+print('Right Rotation:')
+print(*n[-k:]+n[:-k])
+print('Left Rotation:')
+print(*n[k:]+n[:k])
